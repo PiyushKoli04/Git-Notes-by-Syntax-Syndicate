@@ -29,8 +29,8 @@ const Home: React.FC = () => {
               </div>
             </div>
             
-            <h1 className="text-6xl font-bold mb-6 gradient-text">
-              Master Git & GitHub
+            <h1 className="text-5xl font-bold mb-10 gradient-text">
+              Master Git & GitHub - Powered by Syntax Syndicate
             </h1>
             
             <p className="text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
@@ -60,7 +60,7 @@ const Home: React.FC = () => {
         <section className="px-8 py-16">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-12 gradient-text">
-              Why Learn With GitMaster?
+              Why Learn with Syntax Syndicate ?
             </h2>
             
             <div className="grid md:grid-cols-3 gap-8">
