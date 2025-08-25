@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Navigation } from './Navigation';
 import { Button } from './ui/button';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
@@ -36,10 +37,10 @@ export const LessonLayout: React.FC<LessonLayoutProps> = ({
           <footer className="mt-12 pt-8 border-t border-border flex justify-between items-center">
             {prevLesson ? (
               <Button variant="outline" asChild>
-                <a href={prevLesson.path}>
+                <Link to={prevLesson.path}>
                   <ArrowLeft className="w-4 h-4 mr-2" />
                   {prevLesson.title}
-                </a>
+                </Link>
               </Button>
             ) : (
               <div />
@@ -47,10 +48,10 @@ export const LessonLayout: React.FC<LessonLayoutProps> = ({
 
             {nextLesson && (
               <Button variant="default" asChild>
-                <a href={nextLesson.path}>
+                <Link to={nextLesson.path}>
                   {nextLesson.title}
                   <ArrowRight className="w-4 h-4 ml-2" />
-                </a>
+                </Link>
               </Button>
             )}
           </footer>

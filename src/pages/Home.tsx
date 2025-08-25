@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/button';
 import { Navigation } from '../components/Navigation';
 import { 
@@ -39,17 +40,17 @@ const Home: React.FC = () => {
             
             <div className="flex gap-4 justify-center mb-12">
               <Button variant="hero" size="xl" asChild>
-                <a href="/what-is-git">
+                <Link to="/what-is-git">
                   <Play className="w-6 h-6 mr-2" />
                   Start Learning
-                </a>
+                </Link>
               </Button>
               
               <Button variant="github" size="xl" asChild>
-                <a href="/basic-commands">
+                <Link to="/basic-commands">
                   <Code className="w-6 h-6 mr-2" />
                   Try Commands
-                </a>
+                </Link>
               </Button>
             </div>
           </div>

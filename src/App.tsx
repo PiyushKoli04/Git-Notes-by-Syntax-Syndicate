@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import WhatIsGit from "./pages/WhatIsGit";
+import Installation from "./pages/Installation";
 import BasicCommands from "./pages/BasicCommands";
 import NotFound from "./pages/NotFound";
 
@@ -19,6 +20,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/what-is-git" element={<WhatIsGit />} />
+          <Route path="/installation" element={<Installation />} />
           <Route path="/basic-commands" element={<BasicCommands />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
